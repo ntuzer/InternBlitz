@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="company">
+    <img src={{ link }} alt="">
+</div>
+<div class="jobs">
+  <ul>
+    {% for job in data: %}
+      <li>{{ job[0] }} : {{ job[1] }}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}
